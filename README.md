@@ -16,31 +16,57 @@
 Для установки необходимых зависимостей следуйте этим шагам:
 
 Клонируйте репозиторий на ваш локальный компьютер:
+
    ```bash
    git clone https://github.com/Wolf7201/sendEmail
    cd sendEmail
    ```
+
 Установите необходимые зависимости:
+
    ```bash
    pip install -r requirements.txt
    ```
+
+### Создание пароля для почты.
+
+Создайте пароль для внешнего приложения.
+
+https://help.mail.ru/mail/security/protection/external#create
 
 ### Конфигурация
 
 Создайте файл .env в корне проекта, используя env.example в качестве шаблона:
 
    ```bash
-   cp env.example .env
+    cp .env.example .env
    ```
 
-Откройте файл .env и заполните необходимые переменные среды. Пример переменных и их описаний приведён в файле env.example.
+или
+
+   ```bash
+   copy .env.example .env
+   ```
+
+Откройте файл .env и заполните необходимые переменные среды. Пример переменных и их описаний приведён в файле
+.env.example.
 
 ### Запуск
+
    ```bash
     python send_email.py
    ```
 
 или
+
    ```bash
    python async_send_email.py
    ```
+
+### Обновить репозиторий
+
+   ```bash
+   git pull origin main
+   ```
+
+
