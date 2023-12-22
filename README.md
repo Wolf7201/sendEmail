@@ -66,7 +66,7 @@ https://help.mail.ru/mail/security/protection/external#create
 ### Обновить репозиторий
 
    ```bash
-   git pull origin main
+   git pull origin master
    ```
 
 
